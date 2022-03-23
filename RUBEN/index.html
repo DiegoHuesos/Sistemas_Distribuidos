@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Mi primer página web
+        </title>
+    </head>
+        
+    <body>
+        <p>
+            Nombre: <span id="un_nombre"></span> <br>
+            Lugar de nacimiento: <span id="un_lugar"></span> <br>
+            Año de nacimiento: <span id="un_anio"></span> <br>
+        </p>
+        <script>
+            var objetoJSON={
+                "nombre": "Pedro",
+                "lugar": "CDMX",
+                "anio": 1999
+            };
+            document.getElementById("un_nombre").innerHTML=objetoJSON.nombre;
+            document.getElementById("un_lugar").innerHTML=objetoJSON.lugar;
+            document.getElementById("un_anio").innerHTML=objetoJSON.anio;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sitema de cotización de seguro de autos</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h1>Sistema de cotizacion de seguro de autos</h1>
+    <form action="auto.html" method="GET">
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Campo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input id="Nombre" type="text" name="Nombre" value="" onchange="cambiaNombre();" /></td>
+                </tr>
+                <tr>
+                    <td>Apellido </td>
+                    <td><input id="Apellido" type="text" name="Apellido" value="" onchange="cambiaNombre();" /></td>
+                </tr>
+                <tr>
+                    <td>Género</td>
+                    <td>
+                        <input type="radio" name="Genero" value="Masculino" onclick="cambiaGenero(this);" />Masculino
+                        <input type="radio" name="Genero" value="Femenino" onclick="cambiaGenero(this);" />Femenino
+                    </td>
+                </tr>
+                <tr>
+                    <td>Edad</td>
+                    <td><input type="text" name="Edad" value="" /></td>
+                </tr>
+                <tr>
+                    <td>Estado</td>
+                    <td><select name="Estado">
+                            <option>Aguascalientes</option>
+                            <option>Monterrey</option>
+                            <option>Ciudad de México</option>
+                            <option>Querétaro</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td><input type="reset" value="Limpiar" name="Limpiar" /></td>
+                    <td><input type="submit" value="Enviar" name="Enviar" /></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </form>
+
+    <h3>Gracias <span id="genero_texto"></span> <span id="nombre_texto"></span> por el interés en nuestros seguros.</h3>
+
+</body>
+
+</html>

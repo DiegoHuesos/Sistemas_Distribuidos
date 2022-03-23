@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.2 (UNKNOWN-17d59c9; 2018-09-26T15:16:30-0700) JAXWS-RI/2.3.1 JAXWS-API/2.3.1 JAXB-RI/2.3.1 JAXB-API/2.3.1 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices/">
+
+<xs:element name="confirmaReservacion" type="tns:confirmaReservacion"/>
+
+<xs:element name="confirmaReservacionResponse" type="tns:confirmaReservacionResponse"/>
+
+<xs:element name="creaReservacion" type="tns:creaReservacion"/>
+
+<xs:element name="creaReservacionResponse" type="tns:creaReservacionResponse"/>
+
+<xs:complexType name="confirmaReservacion">
+<xs:sequence>
+<xs:element name="tarjeta_credito" type="xs:string" minOccurs="0"/>
+<xs:element name="id_reservacion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="confirmaReservacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="creaReservacion">
+<xs:sequence>
+<xs:element name="origen" type="xs:string" minOccurs="0"/>
+<xs:element name="destino" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha_inicial" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha_final" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="creaReservacionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reservacion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reservacion">
+<xs:sequence>
+<xs:element name="cost" type="xs:double"/>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

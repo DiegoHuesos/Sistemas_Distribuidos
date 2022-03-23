@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Datos de Auto</title>
+</head>
+
+<body>
+    <h1>Sistema de Cotización de Seguros de Auto</h1>
+    <form action="cotizacion.html" method="GET"> 
+        <b>Datos personales:</b><br>
+
+        <script src="auto.js"></script>
+
+        <br><b>Datos del auto</b><br><br>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Campo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marca</td>
+                    <td><select name="Marca">
+                            <option>Chevrolet</option>
+                            <option>Honda</option>
+                            <option>BMW</option>
+                            <option>Mercedes-Benz</option>
+                            <option>Renault</option>
+                            <option>Ford</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Modelo</td>
+                    <td><input id="Modelo" type="text" name="Modelo" value=""" /></td>
+                </tr>
+                <tr>
+                    <td>Placas</td>
+                    <td><input id="Placas" type="text" name="Placas" value="" /></td>
+                </tr>
+
+                <tr>
+                    <td><input type="reset" value="Limpiar" name="Limpiar" /></td>
+                    <td><input type="submit" value="Enviar" name="Enviar" /></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </form>
+</body>
+
+</html>
