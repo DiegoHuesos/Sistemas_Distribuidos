@@ -18,4 +18,5 @@ public interface Registro extends Remote {
     public String enviaIPMulticast() throws RemoteException;
     public int enviaTCPSocket() throws RemoteException;
     public int enviaMulticastSocket() throws RemoteException;
+
 }

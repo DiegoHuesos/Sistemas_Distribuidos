@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BagOfTasks" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BaseTCPSocketsLab" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/IPMulticast" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/IPMulticastClock" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JMS_Papa_Caliente" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JMS_Sistema_Financiero" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JMSqueueAMQ" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JMStopicAMQ" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RUBEN/Proyecto_1_Guacamole/Proyecto_Guacamole" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Serialization" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TCPSockets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TCPSocketsLab" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UDPSockets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hilos" vcs="Git" />
+  </component>
+</project>
