@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <title>Index</title>
+    </head>
+    <body>
+        <h1>Calculadora de Pensión para Trabajdores Independientes</h1>
+
+        <p>Ingresa la siguiente información para conocer tu pensión mensual esperada.</p>
+
+        <form id="myForm" action="agrega_pensionado" method="POST">
+            {%csrf_token%}  <!--Envía un identificador único que autentica en el servidor que viene de la página-->
+            <label> Nombre: <input type="text" name = "nombre"> </label> <br>
+            <label> Edad actual: <input type="text" name = "edad_actual"> </label><br>
+            <label> Edad retiro: <input type="text" name = "edad_retiro"> </label><br>
+            <label> Saldo acumulado en la afore: <input type="text" name = "saldo_acumulado"> </label><br>
+            <label> Ahorro mensual esperado: <input type="text" name = "ahorro_mensual"> </label><br>
+            
+            <label> <input type="radio" id="1" name="genero" value="1"> Hombre </input> <br>
+            <label> <input type="radio" id="2" name="genero" value="2"/> Mujer <br>
+
+
+            <input type="button" onclick="limpia()" value="Limpiar">
+            <input type="submit" value="Agregar">
+        </form>
+        
+        <script>
+            function limpia(){
+                document.getElementById("myForm").reset();
+            }
+            
+        </script>
+    </body>
+</html>

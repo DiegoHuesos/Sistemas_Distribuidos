@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="setData()">
+    <h1>Sistema de Cotización de Seguros</h1>
+    <br>
+    <h3>Seguros de Auto</h3>
+
+    <h4>Datos personales:</h4>
+    <p id="nombre" ></p>
+    <p id="genero"></p>
+    <p id="edad"></p>
+    <p id="estado"></p>
+    <br>
+
+    <h4>Datos del auto</h4>
+
+    <form name="myForm" action="otra.html" onsubmit="return validateForm()" method="get">
+        <input type="hidden" name="hidden" value="" >
+        <table border="1">
+            <tr>
+                <th>Campo</th>
+                <th>Valor</th>
+              </tr>
+              <tr>
+                <td>Marca:</td>
+                <td><input type="text" name="nombre" id="nombre" onkeydown="greetings()" value=""></td>
+              </tr>
+              <tr>
+                <td>Modelo:</td>
+                <td><input type="text" name="apellidos" id="apellidos" onkeydown="greetings()" value=""></td>
+              </tr>
+              <tr>
+                <td>Placas:</td>
+                <td>
+                <div>
+                  <label><input type="radio" name="genero" value="Masculino" checked> Masculino </label>
+                  <label> <input type="radio" name="genero" value="Femenino"> Femenino </label>
+                </div>
+              </td>
+              </tr>
+            
+              <tr>
+                <td><input type="button" value="Limpiar" onclick="limpiar(this)"></td>
+                <td><input type="submit" value="enviar"></td>
+              </tr>
+        </table>
+    </form>
+
+    <h2 id="greetings"></h2>
+    
+    <!--Loading javascript file-->
+    <script type = "text/javascript" src = "./main.js" ></script>
+
+</body>
+</html>

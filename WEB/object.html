@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="otra.html">
+
+
+        <script>
+            persona = new Object();
+            persona.edad = 41;
+            persona.envejece = function(anios){
+                persona.edad = persona.edad + anios;
+            }
+            persona.envejece(1);
+            document.write(persona.edad);
+
+        </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <title>Pensionados</title>
+    </head>
+    <body>
+
+        <h1> Listado de registros de simulaciones de pensión</h1>
+
+        {%  if  pensionados  %}
+        <ul>
+        {%  for  pensionado  in  pensionados  %}
+            <li>
+                <!--a  href="/myfirstapp/{{  estudiante.id  }}/detalles"-->  
+                <ul>
+                 <li> {{pensionado.text}} </li> <br>
+                </ul>
+	            </a>
+            </li>
+        {%  endfor  %}
+        </ul>
+        {%  else  %}
+                <p>No  hay  pensionados  registrados.</p>
+        {%  endif  %}
+    
+    </body>
+</html>

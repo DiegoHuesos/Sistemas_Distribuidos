@@ -4,10 +4,7 @@
  */
 package jmsqueue;
 
-/**
- *
- * @author JGUTIERRGARC
- */
+
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
 import javax.jms.Destination;

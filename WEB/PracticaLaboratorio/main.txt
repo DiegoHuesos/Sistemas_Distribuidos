@@ -1,0 +1,52 @@
+
+function greetings(){
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellidos").value;
+    document.getElementById("greetings").innerHTML = "Gracias Sr(a). " + nombre + " " + apellido + " por el interés en nuestros seguros";
+}
+
+function limpiar(){
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellidos").value = "";
+    document.getElementById("edad").value = "";
+    document.getElementById("estado").value = "";
+    document.getElementById("greetings").innerHTML = "";
+}
+
+function validateForm(){
+    /*
+    var x = document.forms['myForm']['fname'].value;
+    if(x == null || x === ""){
+        alert("First name must be filled out");
+        return false;
+    }
+    return true;
+    */
+   return true;
+}
+
+function enviar(){
+    const params = window.location.search;
+    const urlParams = new URLSearchParams(params);
+    const a_param = urlParams.get("nombre");    
+    console.log(a_param);
+}
+
+
+function setData(){
+    const params = window.location.search;
+    const urlParams = new URLSearchParams(params);
+    var nombre = urlParams.get("nombre"); 
+    var apellidos = urlParams.get("apellidos"); 
+    var genero = urlParams.get("genero"); 
+    var edad = urlParams.get("edad"); 
+    var estado = urlParams.get("estado"); 
+
+    console.log("Hola");
+
+    document.getElementById("nombre").innerHTML = nombre + " " + apellidos;
+    document.getElementById("genero").innerHTML = genero;
+    document.getElementById("edad").innerHTML= edad;
+    document.getElementById("estado").innerHTML= estado;
+}
+

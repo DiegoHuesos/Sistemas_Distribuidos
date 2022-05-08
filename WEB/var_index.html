@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function saludaInterna(nombre){
+            alert("Hola Interna " + nombre);
+        }
+    </script>
+
+    <!--atributos: async vs. defer -->
+    <script src="./codigo_javascript.js" defer></script>
+
+</head>
+<body>
+    
+    <form action="otra.html" method="get">
+        <h1> Intro a Javascript </h1>
+    </form>
+
+    <script>
+        var w = 10;
+        document.write(w, "<br>");
+        
+        let x = 20;
+        document.write(x, "<br>");
+
+        document.write(y, "<br>");
+        var y = 30;
+
+        let z = 40;
+        document.write(z, "<br>");
+        
+
+        document.write("Después", "<br>");
+        document.write(y, "<br>");
+        document.write(z, "<br>");
+
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otra</title>
+    <script>
+        const allParameters = window.location.search;
+        document.write("Estos son los parámetros: " + allParameters);
+        const urlParams = new URLSearchParams();
+        const nombre = urlParams.get("nombre");
+        console.log(nombre);
+        document.write("Este es el nombre: " + nombre);
+    </script>
+    <script>
+        function changeText(elementId){
+            var element = document.getElementById(elementId);
+            element.innerHTML = "Nuevo texto";
+        }
+    </script>
+</head>
+<body>
+    <h1>Otra</h1>
+    <br>
+    <span id="texto"> Texto que deseamos modificar</span>
+    <br>
+
+    <input type="button" value="Cambiar Texto" onclick="changeText('texto')">
+
+
+</body>
+</html>

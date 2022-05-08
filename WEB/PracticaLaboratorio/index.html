@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Cotización de Seguros</h1>
+    <br>
+    <h3>Datos personales</h3>
+    <br>
+
+    <form name="myForm" action="page2.html" onsubmit="return validateForm()" method="get">
+        <input type="hidden" name="hidden" value="">
+        <table border="1">
+            <tr>
+                <th>Campo</th>
+                <th>Valor</th>
+              </tr>
+              <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="nombre" id="nombre" onkeydown="greetings()" value=""></td>
+              </tr>
+              <tr>
+                <td>Apellidos:</td>
+                <td><input type="text" name="apellidos" id="apellidos" onkeydown="greetings()" value=""></td>
+              </tr>
+              <tr>
+                <td>Género:</td>
+                <td>
+                <div>
+                  <label><input type="radio" name="genero" value="Masculino" checked> Masculino </label>
+                  <label> <input type="radio" name="genero" value="Femenino"> Femenino </label>
+                </div>
+              </td>
+              </tr>
+              <tr>
+                <td>Edad:</td>
+                <td><input type="text" name="edad" id="edad" value=""></td>
+              </tr>
+              <tr>
+                <td>Estado:</td>
+                <td><input type="text" name="estado" id="estado" value=""></td>
+              </tr>
+              <tr>
+                <td><input type="button" value="Limpiar" onclick="limpiar(this)"></td>
+                <td><input type="submit" value="enviar"></td>
+              </tr>
+        </table>
+    </form>
+
+    <h2 id="greetings"></h2>
+    
+    <!--Loading javascript file-->
+    <script type = "text/javascript" src = "./main.js" ></script>
+
+</body>
+</html>

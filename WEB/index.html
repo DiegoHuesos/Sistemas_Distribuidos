@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img id="imagen" src="./images/Mario_1.png" alt="Mario 1" onclick="cambiarImagenB(this)">
+
+    <script>
+        function cambiarImagen(id){
+            var element = document.getElementById(id);
+            if(element.src.match("1"))
+                element.src = "./images/Mario_2.png";
+            else
+                element.src = "./images/Mario_1.png";
+        }
+
+        function cambiarImagenB(object){
+            if(object.src.match("1"))
+                object.src = "./images/Mario_2.png";
+            else
+                object.src = "./images/Mario_1.png";
+        }
+    </script>
+</body>
+
+</html>
