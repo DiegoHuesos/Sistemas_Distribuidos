@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Cotización</title>
+    </head>
+    <body>
+	
+
+        <h1>Cotización de seguro para Automóvil</h1>
+        <br>
+        <p>En función a los datos proporcionados: </p>
+        <h1>{{context.costo}}</h1>
+        <br>
+        <br>
+        <br>
+        <h2>Las personas que han cotizado su seguro con nosotros son:</h2>
+        <p>Listado de estudiantes</p>
+
+            {% if context.listaClientes %}
+
+                <ul>
+                    {% for cliente in context.listaClientes %}
+                    <li>{{cliente.nombre}} {{cliente.apellidos}} {{cliente.costo}} </li>
+                    {% endfor %}
+                </ul>
+
+            {% else %}
+
+                <p>No hay clientes registrados.</p>
+
+            {% endif %}
+
+			
+    </body>
+</html>

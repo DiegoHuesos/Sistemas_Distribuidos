@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Datos de Auto</title>
+    </head>
+    <body>
+
+        <form id="formAuto" action="agrega_auto" method="POST">
+            {%csrf_token%}  <!--Envía un identificador único que autentica en el servidor que viene de la página-->
+            
+            <h1>Sistema de Cotización de Seguros de Auto</h1>
+            <p><b>Datos personales: {{cliente.nombre}}</b></p>
+
+
+            
+            <p><b>Datos del auto</b></p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Marca:</td>
+                        <td><select name="marca">
+                                <option>Ford</option>
+                                <option>Chevrolet</option>
+                                <option>Nissan</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Modelo:</td>
+                        <td><input type="text" name="modelo" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Placas:</td>
+                        <td><input type="text" name="placas" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" value="Limpiar" /></td>
+                        <td><input type="submit" value="Enviar" /></td>
+                    </tr>
+                    <input id="cliente" name="cliente" type="hidden" value="{{cliente.id}}"">
+                </tbody>
+            </table>
+
+        </form>                
+
+    </body>
+</html>
